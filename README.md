@@ -7,6 +7,8 @@
 
 `ExportAsPDF` was created as a module for the [Minimal Text Editor (Lite)](https://github.com/micilini/MinimalTextEditorLite) application.
 
+> 💡 The current version does not support emoji generation. They will be removed from the JSON before generating the PDF.
+
 ---
 
 ## Features
