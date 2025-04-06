@@ -111,7 +111,7 @@ var result = await Task.Run(() =>
                 throw new Exception(error);
             }
 
-            return memoryStream.ToArray(); // Returns the binary DOCX file
+            return memoryStream.ToArray(); // Returns the binary PDF file
         }
     }
 });
