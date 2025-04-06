@@ -1,482 +1,641 @@
+# Importação das Biliotecas Iniciais
 import json
+import sys
+import re
+import os
+import html
 import base64
-import sys  # Import sys for command-line arguments
 from io import BytesIO
-import tempfile
-from docx import Document
-from docx.shared import Pt
-from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
-from PIL import Image
-from docx.shared import RGBColor  # Import RGBColor
-from docx.enum.text import WD_COLOR_INDEX  # Import color index for highlighting
-from docx.oxml import OxmlElement
-from docx.oxml.ns import qn
-from docx.shared import RGBColor
-from docx.oxml import parse_xml
-from docx2pdf import convert
-import os
-import winreg
-import shutil
-import subprocess
-from docx.shared import Inches
+from PIL import Image as PILImage
+from reportlab.lib.pagesizes import A4
+from reportlab.pdfgen import canvas
+from reportlab.pdfgen.canvas import Canvas
+from reportlab.lib.units import cm
+from reportlab.lib.colors import Color, black, HexColor, gray
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.platypus import Paragraph, ListFlowable, ListItem, Frame, Table, TableStyle
+from reportlab.lib.enums import TA_JUSTIFY, TA_LEFT, TA_CENTER, TA_RIGHT
+from reportlab.platypus import Frame
+from svglib.svglib import svg2rlg
+from reportlab.graphics import renderPDF
+from reportlab.lib import colors
+from reportlab.lib.units import inch
+from reportlab.lib.utils import ImageReader
+from reportlab.pdfbase.pdfmetrics import stringWidth
 
+# --- Correção importante para Windows ---
+if os.name == 'nt':
+    import msvcrt
+    msvcrt.setmode(sys.stdout.fileno(), os.O_BINARY)
+# ----------------------------------------
 
-def is_microsoft_office_installed():
+# Correção para carregamento de arquivos com imagem
+def resource_path(relative_path):
+    """Retorna o caminho absoluto mesmo quando empacotado com PyInstaller"""
     try:
-        key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Microsoft\Office")
-        return True
-    except FileNotFoundError:
-        return False
+        base_path = sys._MEIPASS  # PyInstaller extrai tudo pra essa pasta temporária
+    except AttributeError:
+        base_path = os.path.abspath(".")
 
-import os
+    return os.path.join(base_path, relative_path)
 
-def is_libreoffice_installed():
-    paths_to_check = [
-        r"C:/Program Files/LibreOffice/program/soffice.exe",
-        r"/usr/bin/soffice",  # For Linux
-        r"/usr/local/bin/soffice"  # Alternative Linux path
-    ]
-    return any(os.path.isfile(path) for path in paths_to_check)
-
-
-
-def customize_run(run, font_size=None, color=None):
-    """
-    Customize a run with the given font size and color.
-    :param run: The run object to customize.
-    :param font_size: Font size in points.
-    :param color: Color as an RGB tuple (e.g., (255, 0, 0) for red).
-    """
-    if font_size:
-        run.font.size = Pt(font_size)
-    if color:
-        run.font.color.rgb = RGBColor(*color)
-
-#when we add any hyper links this added twice one as a hyperlink and the another as normal text, so this function will delete duplicated normal text.
-def clean_duplicate_links(doc):
-    for paragraph in doc.paragraphs:
-        # Set to store text of hyperlinks
-        hyperlink_texts = set()
-        runs_to_remove = []
-
-        # Iterate through the paragraph's XML to find hyperlink elements
-        for element in paragraph._element:
-            if element.tag.endswith("hyperlink"):
-                # Extract text inside the hyperlink
-                for child in element:
-                    if child.tag.endswith("r"):  # Check if it's a run element
-                        for t in child:
-                            if t.tag.endswith("t"):  # Text element
-                                hyperlink_text = t.text.strip()
-                                hyperlink_texts.add(hyperlink_text)
-
-        # Check runs for duplicates
-        for run in paragraph.runs:
-            if run.text.strip() in hyperlink_texts and run._element.getparent().tag != qn("w:hyperlink"):
-                # Mark duplicate plain-text runs for removal
-                runs_to_remove.append(run)
-
-        # Remove duplicate runs
-        for run in runs_to_remove:
-            paragraph._element.remove(run._element)
-
-#the function which added hyperlink
-def add_hyperlink(paragraph, text, url):
-    # Create the hyperlink tag
-    part = paragraph.part
-    r_id = part.relate_to(url, "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink", is_external=True)
-    hyperlink = OxmlElement("w:hyperlink")
-    hyperlink.set(qn("r:id"), r_id)
-    # Create a run and set its properties for the hyperlink
-    run = OxmlElement("w:r")
-    r_pr = OxmlElement("w:rPr")
-    # Set font properties for the hyperlink text
-    run_pr = OxmlElement("w:rPr")
-    run_font = OxmlElement("w:sz")
-    run_font.set(qn('w:val'), '24')  # Adjust size
-    run_pr.append(run_font)
-    run_bold = OxmlElement("w:b")
-    run_bold.set(qn('w:val'), '1')  # Bold
-    run_pr.append(run_bold)
-    run_underline = OxmlElement("w:u")
-    run_underline.set(qn('w:val'), 'single')  # Underline
-    run_pr.append(run_underline)
-    run_color = OxmlElement("w:color")
-    run_color.set(qn('w:val'), '0000FF')  # Blue color for hyperlink
-    run_pr.append(run_color)
-    run.append(run_pr)
-    text_element = OxmlElement("w:t")
-    text_element.text = text
-    run.append(text_element)
-    hyperlink.append(run)
-
-    # Add the hyperlink to the paragraph
-    paragraph._element.append(hyperlink)
-
-
-
-# Load JSON file
+# Load JSON file:
 def load_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
-#this one for make quote like textbox
-def style_as_textbox(paragraph, background_color="D9D9D9"):
-    """
-    Styles a paragraph to look like a textbox with borders and background shading.
-    :param paragraph: The paragraph to style.
-    :param background_color: Background color in hex (default is light gray 'D9D9D9').
-    """
-    # Get the paragraph's XML
-    p = paragraph._element
+# Função para desenhar cabeçalhos (h1 a h6)
+def render_header(c, block_data, current_y, page_width, page_height, margin):
+    level = block_data.get('level', 1)
+    text = re.sub(r'[^\x00-\x7FÀ-ÿ\u00A0-\u00FF\s\w.,;:!?\'"()<>/@&%$#=+\-\[\]{}*]', '',block_data.get('text', '').strip())
 
-    # Create a border element
-    pPr = p.get_or_add_pPr()
-    borders = OxmlElement("w:pBdr")
+    if not text:
+        return current_y  # Nada pra desenhar
 
-    for border_type in ["top", "left", "bottom", "right"]:
-        border = OxmlElement(f"w:{border_type}")
-        border.set(qn("w:val"), "single")  # Border type
-        border.set(qn("w:sz"), "4")  # Border width
-        border.set(qn("w:space"), "1")  # Space between border and text
-        border.set(qn("w:color"), "000000")  # Black border color
-        borders.append(border)
+    if level == 1:
+        font_size = 32
+    else:
+        font_size = 20 + (6 - level) * 2  # Diminui progressivamente
 
-    pPr.append(borders)
+    line_spacing = 1.2
+    x_margin = margin
 
-    # Add background shading
-    shading = OxmlElement("w:shd")
-    shading.set(qn("w:fill"), background_color)  # Background color
-    pPr.append(shading)
+    if current_y < margin + font_size:
+        c.showPage()
+        current_y = page_height - margin
 
+    c.setFont("Helvetica-Bold", font_size)
+    c.setFillColor(black)
+    c.drawString(x_margin, current_y, text)
+    current_y -= font_size * line_spacing
 
-def process_block(block, doc):
-    block_type = block.get('type')
-    data = block.get('data', {})
+    return current_y
 
-    if block_type == 'header':
-        level = data.get('level', 1)
-        text = data.get('text', '')
-        paragraph = doc.add_heading(level=level)
-        add_formatted_text(paragraph, text)
-        for run in paragraph.runs:
-            if level==1:
-                customize_run(run, font_size=32, color=(0, 0, 0))  # Black headers, size decreases with level
-            else:
-                customize_run(run, font_size=20 + (6 - level) * 2, color=(0, 0, 0))  # Black headers, size decreases with level
+# Função para Sanitizar o texto do parágrgafo antes de desenhar
+def sanitize_html(text):
+    # Remove atributos class e outros inválidos
+    text = re.sub(r'\sclass="[^"]*"', '', text)
+
+    # Corrige <br> para <br />
+    text = re.sub(r'<\s*br\s*>', '<br />', text, flags=re.IGNORECASE)
+
+    # Substituições manuais
+    text = text.replace('<code>', '<font face="Courier">').replace('</code>', '</font>')
+    text = text.replace('<mark>', '<u>').replace('</mark>', '</u>')
+    text = text.replace('&nbsp;', ' ')
+
+    # Envolver <a> com cor azul e sublinhado
+    text = re.sub(
+        r'<a href="([^"]+)">([^<]+)</a>',
+        r'<font color="blue"><u><a href="\1">\2</a></u></font>',
+        text
+    )
+
+    # Remove caracteres "estranhos" ou não compatíveis com a fonte
+    text = re.sub(r'[^\x00-\x7FÀ-ÿ\u00A0-\u00FF\s\w.,;:!?\'"()<>/@&%$#=+\-\[\]{}*]', '', text)
+
+    return text
+
+# Função para desenhar parágrafos (b, i, u, a, mark...)
+def render_paragraph(c, data, current_y, page_width, page_height, margin):
+
+    text = data.get("text", "")
+    if not text:
+        return current_y
+
+    text = sanitize_html(text)
+
+    # Cria estilo de parágrafo
+    style = getSampleStyleSheet()['BodyText']
+    style.fontSize = 12
+    style.leading = 15
+    style.alignment = TA_JUSTIFY
+    style.textColor = black
+    style.fontName = 'Times-Roman'
+
+    # Usa Platypus Paragraph para interpretar HTML básico (b, i, u, a, mark...)
+    para = Paragraph(text, style)
+
+    try:
+        para = Paragraph(text, style)
+    except Exception as e:
+        print("[Error]: Error when creating paragraph:", e, file=sys.stderr)
+        return current_y
+
+    # Calcula altura do parágrafo
+    w, h = para.wrap(page_width - 2 * margin, page_height - 2 * margin)
+    if current_y - h < margin:
+        c.showPage()
+        current_y = page_height - margin
+
+    # Desenha o parágrafo diretamente no canvas (sem Frame)
+    para.drawOn(c, margin, current_y - h)
+
+    return current_y - h - 0.3 * cm  # margem inferior entre blocos
+
+# Função para renderizar listagens
+def render_list(c, block_data, current_y, page_width, page_height, margin):
+    items = block_data.get("items", [])
+    style = block_data.get("style", "unordered")  # 'ordered' ou 'unordered'
+
+    if not items:
+        return current_y
+
+    current_y -= 12
+
+    stylesheet = getSampleStyleSheet()
+    item_style = stylesheet['BodyText']
+    item_style.fontSize = 12
+    item_style.leading = 12
+    item_style.alignment = TA_LEFT
+    item_style.fontName = 'Helvetica'
+
+    bullet_indent = margin
+    text_indent = margin + 15
+    spacing = 1.0  # espaçamento entre itens
+
+    for idx, item in enumerate(items):
+        if current_y < margin + item_style.leading * spacing:
+            c.showPage()
+            current_y = page_height - margin
+
+        bullet = f"{idx + 1}." if style == "ordered" else "•"
+
+        # Desenha o bullet manualmente
+        c.setFont("Helvetica-Bold", 12)
+        c.drawString(bullet_indent, current_y, bullet)
+
+        # Desenha o texto como Paragraph
+        text = sanitize_html(item)
+        para = Paragraph(text, item_style)
+        w, h = para.wrap(page_width - (text_indent + margin), page_height)
+
+        # Ajuste fino de alinhamento com base no leading/fontSize
+        baseline_offset = (item_style.leading - item_style.fontSize) / 2
+        y_offset = current_y - h + baseline_offset
         
-    elif block_type == 'paragraph':
-        paragraph = doc.add_paragraph()
-        add_formatted_text(paragraph, data.get('text', ''))
-        for run in paragraph.runs:
-           run.font.size = Pt(18)
+        para.drawOn(c, text_indent, (y_offset + 12))
 
-    elif block_type == 'list':
-        style = data.get('style', 'unordered')
-        for item in data.get('items', []):
-            paragraph = doc.add_paragraph(style='List Bullet' if style == 'unordered' else 'List Number')
-            add_formatted_text(paragraph, item)
-            for run in paragraph.runs:
-               run.font.size = Pt(18)
+        current_y -= h * spacing
 
-    elif block_type == 'checklist':
-        for item in data.get('items', []):
-            status = "✅" if item.get('checked') else "⬜"
-            paragraph = doc.add_paragraph(f"{status} ")
-            add_formatted_text(paragraph, item.get('text', ''))
-            for run in paragraph.runs:
-              run.font.size = Pt(18)
+    return current_y - 0.1 * cm
 
-    elif block_type == 'quote':
-        paragraph = doc.add_paragraph(style='Intense Quote')
-        add_formatted_text(paragraph, f"“{data.get('text', '')}”")
-        style_as_textbox(paragraph, background_color="F4F4F4")  # Light gray for quotes
-        for run in paragraph.runs:
-           run.font.size = Pt(18)
-        caption = data.get('caption', '')
-        if caption:
-            caption_paragraph = doc.add_paragraph(style='Caption')
-            add_formatted_text(caption_paragraph, f"- {caption}")
-            for run in paragraph.runs:
-              run.font.size = Pt(14)
+# Função para renderizar checklists
+def render_checklist(c, block_data, current_y, page_width, page_height, margin):
+    items = block_data.get("items", [])
 
-    elif block_type == 'warning': 
-        title = data.get('title', '')
-        message = data.get('message', '')
-        paragraph = doc.add_paragraph(style='Quote')
-        add_formatted_text(paragraph, f"⚠️ {title}: {message}")
-        style_as_textbox(paragraph, background_color="FFF2CC")  # Light yellow for warnings
-        for run in paragraph.runs:
-           run.font.size = Pt(18)
+    if not items:
+        return current_y
 
-    elif block_type == 'code':
-        paragraph = doc.add_paragraph(data.get('code', ''), style='Normal') 
-        for run in paragraph.runs:
-           run.font.size = Pt(16)
+    current_y -= 12
 
-    elif block_type == 'delimiter':
-        paragraph = doc.add_paragraph(style='Title')
-        paragraph.alignment=WD_PARAGRAPH_ALIGNMENT.CENTER
-        add_formatted_text(paragraph, '***')  # Visual separation
+    # Caminhos para os SVGs
+    checked_icon = resource_path("assets/checked.svg")
+    unchecked_icon = resource_path("assets/unchecked.svg")
+    icon_size = 12  # tamanho em pontos
+    icon_indent = margin
 
-    elif block_type == 'table':
-        table_data = data.get('content', [])
-        table = doc.add_table(rows=len(table_data), cols=len(table_data[0]))
-        for i, row in enumerate(table_data):
-            for j, cell in enumerate(row):
-                cell_paragraph = table.cell(i, j).paragraphs[0]
-                add_formatted_text(cell_paragraph, cell)
-                for run in cell_paragraph.runs:
-                  run.font.size = Pt(18)
+    stylesheet = getSampleStyleSheet()
+    item_style = stylesheet['BodyText']
+    item_style.fontSize = 12
+    item_style.leading = 15
+    item_style.alignment = TA_LEFT
+    item_style.fontName = 'Helvetica'
 
-    elif block_type == 'image':
-        add_image_to_fit_page_or_original(data.get('url'), doc)
+    text_indent = icon_indent + icon_size + 5
+    spacing = 1.5
 
+    def draw_svg_icon(path, x, y, size):
+        drawing = svg2rlg(path)
+        if not drawing:
+            return
+        # Escala proporcional
+        scale = size / max(drawing.width, drawing.height)
+        drawing.scale(scale, scale)
+        # Alinha o ícone com a linha de base do texto
+        y_adjusted = y - (size * 0.2)
+        renderPDF.draw(drawing, c, x, y_adjusted)
 
-# Add formatted text with inline styles
-def add_formatted_text(paragraph, text):
-    from html.parser import HTMLParser
+    for item in items:
+        if current_y < margin + item_style.leading * spacing:
+            c.showPage()
+            current_y = page_height - margin
 
-    class InlineStyleParser(HTMLParser):
-        def __init__(self):
-            super().__init__()
-            self.current_tag = None
-            self.current_attrs = {}
+        icon_path = checked_icon if item.get("checked") else unchecked_icon
 
-        def handle_starttag(self, tag, attrs):
-            self.current_tag = tag
-            self.current_attrs = dict(attrs)
+        # Desenha o SVG do ícone
+        draw_svg_icon(icon_path, icon_indent, current_y, icon_size)
 
-        def handle_endtag(self, tag):
-            self.current_tag = None
+        # Texto ao lado do ícone
+        text = sanitize_html(item.get("text", ""))
+        para = Paragraph(text, item_style)
+        w, h = para.wrap(page_width - text_indent - margin, page_height)
+        para.drawOn(c, text_indent, current_y - h + 12)
 
-        def handle_data(self, data):
-            run = paragraph.add_run(data)
+        current_y -= h * spacing
 
-            if self.current_tag == "i":
-               run.italic = True
-            elif self.current_tag == "b":
-               run.bold = True
-            elif self.current_tag == "u":
-               run.underline = True
-            elif self.current_tag == "code":
-               run.font.color.rgb = RGBColor(255, 0, 0)  # Red for code
-            elif self.current_tag == "mark":
-               run.font.highlight_color = WD_COLOR_INDEX.YELLOW  # Yellow highlight for sublime
-            elif self.current_tag == "a":
-          # Check for href only if it's a new <a> tag to avoid processing the same link twice
-             if "href" in self.current_attrs:
-               add_hyperlink(paragraph, data, self.current_attrs["href"])
-          # Reset to None after processing
-               self.current_tag = None
-            else:
-             # Reset formatting for normal text
-               run.font.color.rgb = None
- 
-    parser = InlineStyleParser()
-    parser.feed(text)
+    return current_y - 0.1 * cm
 
+# Função para renderizar os Quotes
+def render_quote(c, block_data, current_y, page_width, page_height, margin):
+    quote_text = block_data["text"]
+    caption = block_data.get("caption", "")
+    alignment = block_data.get("alignment", "left")
 
-# Add images to the document
-def add_image_to_fit_page_or_original(base64_string, doc, page_width=6.0, page_height=8.0):
+    padding = 10
+    box_width = page_width - 2 * margin
+    max_box_height = page_height - current_y - margin
+
+    # Estilo do texto da citação
+    quote_style = ParagraphStyle(
+        'Quote',
+        fontName='Helvetica-Oblique',
+        fontSize=14,
+        leading=18,
+        textColor=black,
+        alignment={'left': TA_LEFT, 'center': TA_CENTER, 'right': TA_RIGHT}.get(alignment, TA_LEFT),
+        spaceAfter=6,
+    )
+
+    caption_style = ParagraphStyle(
+        'QuoteCaption',
+        fontName='Helvetica',
+        fontSize=10,
+        leading=12,
+        textColor=black,
+        alignment=quote_style.alignment,
+    )
+
+    # Parágrafos
+    quote_para = Paragraph(f'“{quote_text}”', quote_style)
+    caption_para = Paragraph(f'- {caption}', caption_style) if caption else None
+
+    # Calcula altura total da caixa
+    quote_width, quote_height = quote_para.wrap(box_width - 2 * padding, max_box_height)
+    caption_width, caption_height = (caption_para.wrap(box_width - 2 * padding, max_box_height) if caption else (0, 0))
+    total_height = quote_height + caption_height + 2 * padding
+
+    if current_y - total_height < margin:
+        c.showPage()
+        current_y = page_height - margin
+
+    # Desenha a "caixa" amarela
+    box_y = current_y - total_height
+    c.setFillColor(HexColor("#FFF9C4"))  # amarelo clarinho
+    c.rect(margin, box_y, box_width, total_height, fill=1, stroke=0)
+
+    # Desenha os parágrafos dentro da caixa
+    quote_para.drawOn(c, margin + padding, box_y + caption_height + padding)
+    if caption_para:
+        caption_para.drawOn(c, margin + padding, box_y + padding)
+
+    return box_y - 0.3 * cm  # espaçamento abaixo do bloco
+
+# Função para renderizar os Warnings
+def render_warning(c, block_data, current_y, page_width, page_height, margin):
+    title = block_data.get("title", "")
+    message = block_data.get("message", "")
+    warning_text = f"<b>{title}:</b> {message}"
+
+    stylesheet = getSampleStyleSheet()
+    style = ParagraphStyle(
+        'WarningStyle',
+        parent=stylesheet['BodyText'],
+        fontName='Helvetica',
+        fontSize=13,
+        leading=18,
+        alignment=TA_LEFT,
+        textColor=colors.black,
+    )
+
+    padding = 6
+    icon_padding = 6
+    icon_size = 16  # Tamanho final desejado em pontos
+
+    box_width = page_width - 2 * margin
+    max_text_width = box_width - icon_size - 3 * padding
+
+    # Parágrafo de texto
+    text = Paragraph(warning_text, style)
+    text_width, text_height = text.wrap(max_text_width, page_height)
+
+    total_height = max(text_height, icon_size) + 2 * padding
+
+    if current_y - total_height < margin:
+        c.showPage()
+        current_y = page_height - margin
+
+    # Caixa amarela de fundo
+    c.setFillColor(colors.HexColor("#FFF2CC"))
+    c.roundRect(margin, current_y - total_height, box_width, total_height, 6, fill=1, stroke=0)
+
+    # Borda
+    c.setStrokeColor(colors.HexColor("#F7D972"))
+    c.roundRect(margin, current_y - total_height, box_width, total_height, 6, fill=0, stroke=1)
+
+    # Desenho do ícone SVG
+    svg_path = resource_path("assets/warning.svg")
+    if os.path.exists(svg_path):
+        drawing = svg2rlg(svg_path)
+
+        # Escala proporcional
+        desired_icon_size = icon_size  # em pontos
+        scale_x = desired_icon_size / drawing.width
+        scale_y = desired_icon_size / drawing.height
+        drawing.scale(scale_x, scale_y)
+
+        # Redefine tamanho
+        drawing.width *= scale_x
+        drawing.height *= scale_y
+
+        # Centraliza verticalmente
+        icon_x = margin + padding
+        icon_y = current_y - padding - (drawing.height + text_height) / 2 + (text_height - drawing.height) / 2
+
+        renderPDF.draw(drawing, c, icon_x, icon_y)
+
+    # Renderiza texto
+    text_x = margin + padding + icon_size + icon_padding
+    text_y = current_y - padding - text_height
+    text.drawOn(c, text_x, text_y)
+
+    return current_y - total_height - 0.2 * cm
+
+# Função para renderizar blocos de código
+def render_code_block(c, block_data, current_y, page_width, page_height, margin):
+    code_text = block_data.get("code", "")
+    if not code_text.strip():
+        return current_y
+
+    code_text = html.escape(code_text)  # Escapa <, >, &, etc.
+    code_text = code_text.replace(" ", "&nbsp;").replace("\n", "<br/>")
+
+    # Estilo da fonte do código
+    style = ParagraphStyle(
+        'CodeStyle',
+        fontName='Courier',  # Monoespaçada
+        fontSize=10.5,
+        leading=14,
+        textColor=colors.white,
+        alignment=TA_LEFT,
+        leftIndent=0,
+        rightIndent=0,
+        spaceAfter=0,
+        spaceBefore=0,
+    )
+
+    padding = 6
+    box_width = page_width - 2 * margin
+
+    # Garante que o texto preserve os espaços e quebras de linha
+    code_text = code_text.replace(" ", "&nbsp;").replace("\n", "<br/>")
+    paragraph = Paragraph(code_text, style)
+    text_width, text_height = paragraph.wrap(box_width - 2 * padding, page_height)
+
+    total_height = text_height + 2 * padding
+
+    if current_y - total_height < margin:
+        c.showPage()
+        current_y = page_height - margin
+
+    # Caixa com fundo escuro e borda leve
+    c.setFillColor(colors.HexColor("#2d2d2d"))  # fundo estilo editor
+    c.roundRect(margin, current_y - total_height, box_width, total_height, 4, fill=1, stroke=0)
+
+    # Borda
+    c.setStrokeColor(colors.HexColor("#444444"))
+    c.roundRect(margin, current_y - total_height, box_width, total_height, 4, fill=0, stroke=1)
+
+    # Renderiza o bloco de código dentro da caixa
+    paragraph.drawOn(c, margin + padding, current_y - padding - text_height)
+
+    return current_y - total_height - 0.2 * cm
+
+# Função para renderizar delimitadores
+def render_delimiter(c, current_y, page_width, page_height, margin):
+    from reportlab.lib.colors import HexColor
+
+    text = "***"
+    color = HexColor("#3498db")  # Azul claro
+    font_size = 16
+
+    # Verifica se há espaço suficiente
+    text_height = font_size * 1.2
+    if current_y - text_height < margin:
+        c.showPage()
+        current_y = page_height - margin
+
+    # Define estilo
+    c.setFont("Helvetica-Bold", font_size)
+    c.setFillColor(color)
+
+    text_width = c.stringWidth(text, "Helvetica-Bold", font_size)
+    x_position = (page_width - text_width) / 2
+    y_position = current_y - font_size
+
+    # Desenha o texto no centro da página
+    c.drawString(x_position, y_position, text)
+
+    return current_y - text_height - 0.2 * cm
+
+# Função para renderizar tabelas
+def render_table(c, block_data, current_y, page_width, page_height, margin):
+    content = block_data.get("content", [])
+    if not content:
+        return current_y
+
+    # Define tamanho máximo e mínimo para colunas
+    num_cols = len(content[0])
+    table_width = page_width - 2 * margin
+    col_width = table_width / num_cols
+
+    # Estilo da tabela
+    style = TableStyle([
+        ('FONTNAME', (0, 0), (-1, -1), 'Helvetica'),
+        ('FONTSIZE', (0, 0), (-1, -1), 12),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#D3D3D3") if block_data.get("withHeadings") else colors.white),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.black),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+        ('TOPPADDING', (0, 0), (-1, -1), 6),
+    ])
+
+    # Criar tabela e calcular altura
+    table = Table(content, colWidths=[col_width]*num_cols)
+    table.setStyle(style)
+
+    _, table_height = table.wrapOn(c, table_width, page_height)
+
+    if current_y - table_height < margin:
+        c.showPage()
+        current_y = page_height - margin
+
+    table.drawOn(c, margin, current_y - table_height)
+
+    return current_y - table_height - 0.5 * cm
+
+# Função para inserir imagens
+def render_image_block(c, data, current_y, page_width, page_height, margin, max_width=6*inch, max_height=6*inch):
     """
-    Add an image to the Word document, resizing only if it exceeds the page size.
-    
+    Renderiza uma imagem base64 no PDF usando o canvas diretamente.
+
+    Retorna a nova posição Y atualizada após a imagem.
+
     Args:
-        base64_string (str): The base64-encoded image string.
-        doc (Document): The Word document object.
-        page_width (float): Maximum width of the image in inches (default is 6 inches for standard margins).
-        page_height (float): Maximum height of the image in inches (default is 8 inches for standard margins).
+        c: canvas do ReportLab.
+        data: dicionário do bloco de imagem (Editor.js).
+        current_y: posição Y atual.
+        page_width: largura da página.
+        page_height: altura da página.
+        margin: margem lateral.
     """
-    if base64_string.startswith("data:image/"):
-        # Decode the base64 image
+    base64_string = data.get("url", "")
+    if not base64_string.startswith("data:image/"):
+        return current_y
+
+    # Decodifica imagem base64
+    try:
         img_data = base64.b64decode(base64_string.split(",")[1])
-        img = Image.open(BytesIO(img_data))
-        
-        # Get the original dimensions of the image
-        original_width, original_height = img.size  # In pixels
-        dpi = img.info.get("dpi", (96, 96))[0]  # Default DPI is 96 if not specified
-        img_width_in_inches = original_width / dpi
-        img_height_in_inches = original_height / dpi
-        
-        # Check if the image needs resizing
-        if img_width_in_inches > page_width or img_height_in_inches > page_height:
-            # Calculate the scaling factors to fit the image within the page
-            width_scale = page_width / img_width_in_inches
-            height_scale = page_height / img_height_in_inches
-            scale = min(width_scale, height_scale)  # Use the smaller scaling factor
-            
-            # Calculate the new dimensions
-            scaled_width = img_width_in_inches * scale
-            scaled_height = img_height_in_inches * scale
+    except Exception as e:
+        print(f"[Error]: When decoding image: {e}", file=sys.stderr)
+        return current_y
+
+    img_io = BytesIO(img_data)
+
+    try:
+        # Abrir imagem com PIL
+        pil_img = PILImage.open(img_io)
+
+        # Se a imagem tiver canal alpha (transparência), converte para RGB com fundo branco
+        if pil_img.mode in ("RGBA", "LA"):
+            background = PILImage.new("RGB", pil_img.size, (255, 255, 255))  # fundo branco
+            background.paste(pil_img, mask=pil_img.split()[-1])  # aplica alpha como máscara
+            pil_img = background
         else:
-            # Use the original dimensions
-            scaled_width = img_width_in_inches
-            scaled_height = img_height_in_inches
-        
-        # Save the image temporarily
-        img.save("temp_image.png")
-        
-        # Add visual separation before the image
-        paragraph = doc.add_paragraph()
-        paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-        paragraph.add_run('\n')  # Visual separation
-        
-        # Add the image to the document with calculated dimensions
-        doc.add_picture("temp_image.png", width=Inches(scaled_width), height=Inches(scaled_height))
-        
-        # Add visual separation after the image
-        paragraph = doc.add_paragraph()
-        paragraph.add_run('\n')  # Visual separation
-
-# Main function
-def create_docx_from_json(json_data, output_docx_path):
-    doc = Document()
-
-    for block in json_data.get('blocks', []):
-        process_block(block, doc)
-
-    # Remove duplicate hyperlinks
-    clean_duplicate_links(doc)
-
-    # Save the DOCX file to BytesIO
-    doc_stream = BytesIO()
-    doc.save(doc_stream)
-    doc_stream.seek(0)
-    
-    return doc_stream
-
-#for microsoft word
-def convert_docx_to_pdf_word(docx_stream):
-    """
-    Convert DOCX content from a BytesIO stream to PDF content as a BytesIO object.
-    :param docx_stream: BytesIO stream containing DOCX data.
-    :return: BytesIO object containing PDF data.
-    """
-    # Create temporary files for DOCX and PDF
-    with tempfile.NamedTemporaryFile(suffix=".docx", delete=False) as docx_temp:
-        docx_temp.write(docx_stream.getvalue())
-        docx_temp_path = docx_temp.name
-
-    pdf_stream = BytesIO()
-    try:
-        # Convert DOCX to PDF
-        pdf_temp_path = f"{docx_temp_path[:-5]}.pdf"
-        convert(docx_temp_path)
-
-        # Read the resulting PDF into a BytesIO object
-        with open(pdf_temp_path, "rb") as pdf_file:
-            pdf_stream.write(pdf_file.read())
-
-    finally:
-        # Clean up temporary files
-        if os.path.exists(docx_temp_path):
-            os.remove(docx_temp_path)
-        if os.path.exists(pdf_temp_path):
-            os.remove(pdf_temp_path)
-
-    pdf_stream.seek(0)  # Rewind the stream to the beginning
-    return pdf_stream
-
-#for libre office
-def find_libreoffice():
-    """
-    Find the LibreOffice executable path from a list of potential paths.
-    :return: The valid path to LibreOffice executable or None if not found.
-    """
-    paths = [
-        r"C:/Program Files/LibreOffice/program/soffice.exe",  # Windows
-        r"/usr/bin/soffice",  # Linux
-        r"/usr/local/bin/soffice"  # Alternative Linux path
-    ]
-    
-    for path in paths:
-        if os.path.exists(path):
-            return path
-    
-    # Fallback to default system PATH lookup
-    return shutil.which("soffice")
-
-def convert_docx_to_pdf_libre(docx_binary_data):
-    """
-    Convert DOCX content from binary data to PDF content as binary data.
-    :param docx_binary_data: Binary content of the DOCX file.
-    :return: BytesIO object containing PDF data.
-    """
-    # Create a temporary file for the DOCX binary data
-    with tempfile.NamedTemporaryFile(suffix=".docx", delete=False) as docx_temp:
-        docx_temp.write(docx_binary_data.read())
-        docx_temp_path = docx_temp.name
-
-    pdf_stream = BytesIO()
-    try:
-        # Define the output PDF path (temporary file)
-        pdf_temp_path = f"{docx_temp_path[:-5]}.pdf"
-
-        # Find LibreOffice path
-        libreoffice_path = find_libreoffice()
-        if not libreoffice_path:
-            raise EnvironmentError("LibreOffice is not installed or not found in the specified paths.")
-
-        # Convert using LibreOffice
-        command = [
-            libreoffice_path,
-            "--headless",
-            "--convert-to", "pdf",
-            "--outdir", os.path.dirname(pdf_temp_path),
-            docx_temp_path
-        ]
-        subprocess.run(command, check=True)
-
-        # Read the resulting PDF into a BytesIO object
-        with open(pdf_temp_path, "rb") as pdf_file:
-            pdf_stream.write(pdf_file.read())
-
-    except subprocess.CalledProcessError as e:
-        print(f"Error during conversion: {e}")
-    finally:
-        # Clean up temporary DOCX and PDF files
-        if os.path.exists(docx_temp_path):
-            os.remove(docx_temp_path)
-        if os.path.exists(pdf_temp_path):
-            os.remove(pdf_temp_path)
-
-    pdf_stream.seek(0)  # Rewind the stream to the beginning
-    return pdf_stream
-
-
-def detect_office_suite(docx_stream):
-    try:
-        if is_microsoft_office_installed():
-            return convert_docx_to_pdf_word(docx_stream)
+            pil_img = pil_img.convert("RGB")
     except Exception as e:
-        print(f"Error with Microsoft Office: {e}")
-        
+        print(f"[Error]: When opening image in PIL: {e}", file=sys.stderr)
+        return current_y
+
+    img_width_px, img_height_px = pil_img.size
+
+    # Converter para pontos (assume DPI padrão 96 se não informado)
+    dpi = pil_img.info.get("dpi", (96, 96))[0]
+    img_width_pt = img_width_px / dpi * 72
+    img_height_pt = img_height_px / dpi * 72
+
+    # Redimensionar mantendo proporção
+    scale_w = max_width / img_width_pt
+    scale_h = max_height / img_height_pt
+    scale = min(1.0, scale_w, scale_h)
+
+    img_width_pt *= scale
+    img_height_pt *= scale
+
+    # Atualizar Y (com espaço acima)
+    current_y -= img_height_pt + 10  # 10 pts de espaçamento superior
+
+    # Verificar se ultrapassa a margem inferior
+    if current_y < margin:
+        c.showPage()
+        current_y = page_height - margin - img_height_pt
+
+    # Converter imagem RGB para novo BytesIO e desenhar
+    rgb_io = BytesIO()
+    pil_img.save(rgb_io, format="PNG")
+    rgb_io.seek(0)
+
+    x = (page_width - img_width_pt) / 2  # Centralizado
+    c.drawImage(ImageReader(rgb_io), x, current_y, width=img_width_pt, height=img_height_pt)
+
+    # Descer mais um pouco (margem inferior da imagem)
+    current_y -= 20
+
+    # Caption (legenda) se houver
+    caption = data.get("caption", "")
+    if caption:
+        c.setFont("Helvetica-Oblique", 9)
+        c.setFillColor(gray)
+        caption_width = stringWidth(caption, "Helvetica-Oblique", 9)
+        caption_x = (page_width - caption_width) / 2
+        c.drawString(caption_x, current_y, caption)
+        current_y -= 20  # espaço depois da legenda
+        c.setFillColorRGB(0, 0, 0)  # reset cor para preto
+
+    return current_y
+
+# Função principal de geração do PDF
+def generate_pdf(data):
+    buffer = BytesIO()
+
+    c = canvas.Canvas(buffer, pagesize=A4)
+    page_width, page_height = A4
+    margin = 2 * cm
+    current_y = page_height - margin
+
+    for block in data['blocks']:
+        block_type = block.get('type')
+        block_data = block.get('data', {})
+
+        if block_type == 'header':
+            current_y = render_header(c, block_data, current_y, page_width, page_height, margin)
+        elif block_type == 'paragraph':
+            current_y = render_paragraph(c, block_data, current_y, page_width, page_height, margin)
+        elif block_type == 'list':
+            current_y = render_list(c, block_data, current_y, page_width, page_height, margin)
+        elif block_type == 'checklist':
+            current_y = render_checklist(c, block_data, current_y, page_width, page_height, margin)
+        elif block_type == "quote":
+            current_y = render_quote(c, block_data, current_y, page_width, page_height, margin)
+        elif block_type == "warning":
+            current_y = render_warning(c, block_data, current_y, page_width, page_height, margin)
+        elif block_type == "code":
+            current_y = render_code_block(c, block_data, current_y, page_width, page_height, margin)
+        elif block_type == "delimiter":
+            current_y = render_delimiter(c, current_y, page_width, page_height, margin)
+        elif block_type == 'table':
+            current_y = render_table(c, block_data, current_y, page_width, page_height, margin)
+        elif block_type == 'image':
+            current_y = render_image_block(c, block_data, current_y, page_width, page_height, margin)
+
+    c.save()
+    buffer.seek(0)  # Volta ao início do buffer
+
+    # 2. Envia o conteúdo binário para stdout
+    sys.stdout.buffer.write(buffer.read())
+
+# Main Program Execution
+def main():
+    # Verifica se o tamanho dos argumentos 
+    if len(sys.argv) < 2:
+        print("[Error]: Usage: ExportAsPDF <path_to_JSON_file>", file=sys.stderr)
+        sys.exit(1)
+
+    json_path = sys.argv[1]
+
     try:
-        if is_libreoffice_installed():
-            return convert_docx_to_pdf_libre(docx_stream)
+        # Chama a função load_json e armazena na variável data
+        data = load_json(json_path)
+
+        # Checa se o JSON não está vazio
+        if not data:
+            print("[Error]: JSON file is empty.", file=sys.stderr)
+            sys.exit(1)
+
+        # Checa se existe a chave "blocks" dentro do JSON e ela não está vazia
+        if "blocks" not in data or not data["blocks"]:
+            print('[Error]: JSON file not have "blocks" key.', file=sys.stderr)
+            sys.exit(1)
+
+        # Gera o PDF
+        generate_pdf(data)
+
     except Exception as e:
-        print(f"Error with LibreOffice: {e}")
+        print(f"[Error]: When processing JSON file: {e}", file=sys.stderr)
+        sys.exit(1)
 
-
+# Execution Main
 if __name__ == "__main__":
-    json_file_path = sys.argv[1]
-    pdf_output_path = "output.pdf"
-
-    # Load JSON data
-    with open(json_file_path, 'r', encoding='utf-8') as file:
-        json_data = json.load(file)
-
-    # Create DOCX from JSON
-    docx_stream = create_docx_from_json(json_data, "output.docx")
-    pdf=detect_office_suite(docx_stream)
-
-
-    sys.stdout.buffer.write(pdf.getvalue())
-#for test
-""" def save_pdf_stream_to_file(pdf_stream: bytes, output_path: str):
-    with open(output_path, "wb") as pdf_file:
-        pdf_file.write(pdf_stream)
-    print(f"PDF saved successfully to {output_path}")
-
-save_pdf_stream_to_file(pdf.getvalue(),"test1.pdf") """
+    main()

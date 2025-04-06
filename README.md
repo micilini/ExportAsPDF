@@ -3,7 +3,7 @@
 
 ## Overview
 
-`ExportAsPDF` is a Python script designed to convert structured JSON data into a well-formatted PDF document. It supports advanced formatting, such as styled text, hyperlinks, images, and more. The script detects the installed office suite (Microsoft Office or LibreOffice) to perform the conversion from DOCX to PDF.
+`ExportAsPDF` is a Python script designed to convert structured JSON data into a well-formatted PDF document. It supports advanced formatting, such as styled text, hyperlinks, images, and more. The script uses [ReportLab](https://www.reportlab.com/) to make conversion from JSON to PDF directly.
 
 `ExportAsPDF` was created as a module for the [Minimal Text Editor (Lite)](https://github.com/micilini/MinimalTextEditorLite) application.
 
@@ -11,14 +11,14 @@
 
 ## Features
 
-- Converts JSON blocks into a Word document (`.docx`) and then into a PDF.
+- Converts JSON blocks into a PDF (`.pdf`).
 - Supports:
   - Headers, paragraphs, and lists (ordered and unordered).
   - Quotes, warnings, and checklists.
   - Tables, images, and code blocks.
   - Inline formatting (bold, italic, underline, links, highlights).
 - Automatically resizes images to fit the page.
-- Uses either Microsoft Office or LibreOffice for DOCX-to-PDF conversion.
+- Use ReportLab to generate PDF files.
 
 ---
 
@@ -29,13 +29,33 @@
 Install the required Python libraries using the following command:
 
 ```bash
-pip install python-docx docx2pdf pillow
+pip install reportlab pillow pyinstaller
 ```
 
-### System Requirements
+---
 
-- **Microsoft Office** or **LibreOffice** installed on the system.
-- Python 3.6 or higher.
+## How to Generate the Executable (`ExportAsPDF.exe`)
+
+### Requirements
+- Python 3.6 or higher
+- `pip` package manager
+- The following Python packages:
+  - `reportlab`
+  - `pillow`
+  - `pyinstaller`
+
+> 💡 `reportlab` is used for PDF generation. `pillow` handles image rendering (e.g. embedded base64 or SVG-converted PNGs).
+
+### Create the Executable
+
+Use `pyinstaller` to package the script into an executable:
+
+   ```bash
+   pyinstaller --onefile --distpath ./dist --name ExportAsPDF --add-data "assets;assets" ExportAsPDF.py
+   ```
+   - The `--onefile` flag ensures the executable is a single file.
+   - The `--name` flag specifies the output executable's name.
+   - The `--add-data` flag ensure that all files inside `assets` folder are inside the executable
 
 ---
 
@@ -53,12 +73,10 @@ pip install python-docx docx2pdf pillow
 
 ---
 
----
-
 ## Example Usage
 
 ### Using the Executable in C#
-Below is an example of how to call `ExportAsDoc.exe` from a C# application:
+Below is an example of how to call `ExportAsPDF.exe` from a C# application:
 
 ```csharp
 // Save JSON data to a temporary file
@@ -98,26 +116,6 @@ var result = await Task.Run(() =>
     }
 });
 ```
-
-## Conversion Details
-
-### Office Suite Detection
-
-The script automatically detects and uses an installed office suite:
-- **Microsoft Office**: Conversion is handled via `docx2pdf`.
-- **LibreOffice**: Conversion is handled via a subprocess call to LibreOffice's CLI.
-
-If no office suite is detected, the script will terminate with an error.
-
----
-
-## Troubleshooting
-
-- **Error**: `LibreOffice is not installed or not found in the specified paths.`
-  - Ensure LibreOffice or Microsoft Office is installed and accessible from the system PATH.
-
-- **Error**: `pip install command fails.`
-  - Ensure Python and pip are correctly installed.
 
 ---
 

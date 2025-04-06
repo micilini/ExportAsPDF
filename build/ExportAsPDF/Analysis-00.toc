@@ -1,0 +1,2729 @@
+(['C:\\Users\\William Lima\\Desktop\\ExportAsPDF\\ExportAsPDF.py'],
+ ['C:\\Users\\William Lima\\Desktop\\ExportAsPDF'],
+ [],
+ [('C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks',
+   -1000),
+  ('C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\_pyinstaller_hooks_contrib',
+   -1000)],
+ {},
+ [],
+ [],
+ False,
+ {},
+ 0,
+ [],
+ [('assets\\checked.svg',
+   'C:\\Users\\William Lima\\Desktop\\ExportAsPDF\\assets\\checked.svg',
+   'DATA'),
+  ('assets\\unchecked.svg',
+   'C:\\Users\\William Lima\\Desktop\\ExportAsPDF\\assets\\unchecked.svg',
+   'DATA'),
+  ('assets\\warning.svg',
+   'C:\\Users\\William Lima\\Desktop\\ExportAsPDF\\assets\\warning.svg',
+   'DATA')],
+ '3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit '
+ '(AMD64)]',
+ [('pyi_rth_inspect',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('ExportAsPDF',
+   'C:\\Users\\William Lima\\Desktop\\ExportAsPDF\\ExportAsPDF.py',
+   'PYSOURCE')],
+ [('subprocess',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\subprocess.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\signal.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\selectors.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\contextlib.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\threading.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_threading_local.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_strptime.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\datetime.py',
+   'PYMODULE'),
+  ('_pydatetime',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pydatetime.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\calendar.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\argparse.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\textwrap.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\shutil.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zipfile\\__init__.py',
+   'PYMODULE'),
+  ('zipfile._path',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zipfile\\_path\\__init__.py',
+   'PYMODULE'),
+  ('zipfile._path.glob',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zipfile\\_path\\glob.py',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pathlib\\__init__.py',
+   'PYMODULE'),
+  ('pathlib._local',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pathlib\\_local.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ipaddress.py',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\glob.py',
+   'PYMODULE'),
+  ('pathlib._abc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pathlib\\_abc.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\py_compile.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\__init__.py',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\csv.py',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_text.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\string.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\generator.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\random.py',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\statistics.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\decimal.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\contextvars.py',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\fractions.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\numbers.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\hashlib.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pickle.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pprint.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\dataclasses.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\bisect.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\utils.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\socket.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\quopri.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\getopt.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\typing.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib.resources.abc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\abc.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\__init__.py',
+   'PYMODULE'),
+  ('importlib.resources._functional',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\_functional.py',
+   'PYMODULE'),
+  ('importlib.resources._common',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\_common.py',
+   'PYMODULE'),
+  ('importlib.resources._adapters',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\_adapters.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tempfile.py',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\_abc.py',
+   'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_functools.py',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_collections.py',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\metadata\\_meta.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\inspect.py',
+   'PYMODULE'),
+  ('token',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\token.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\dis.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\opcode.py',
+   'PYMODULE'),
+  ('_opcode_metadata',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_opcode_metadata.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ast.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\__future__.py',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\readers.py',
+   'PYMODULE'),
+  ('importlib.resources.readers',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\readers.py',
+   'PYMODULE'),
+  ('importlib.resources._itertools',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\resources\\_itertools.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tokenize.py',
+   'PYMODULE'),
+  ('struct',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\struct.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tarfile.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\gzip.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_compression.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\lzma.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\bz2.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\fnmatch.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\copy.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\gettext.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\resource_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\getpass.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\nturl2path.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ftplib.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\netrc.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\mimetypes.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ssl.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\http\\client.py',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\hmac.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes.util',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\util.py',
+   'PYMODULE'),
+  ('ctypes._aix',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\_aix.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dyld',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\macholib\\dyld.py',
+   'PYMODULE'),
+  ('ctypes.macholib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\macholib\\__init__.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dylib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\macholib\\dylib.py',
+   'PYMODULE'),
+  ('ctypes.macholib.framework',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\macholib\\framework.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\queue.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\shared_memory.py',
+   'PYMODULE'),
+  ('secrets',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\secrets.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\runpy.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pkgutil.py',
+   'PYMODULE'),
+  ('zipimport',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\zipimport.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('_colorize',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_colorize.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\stringprep.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_py_abc.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase.pdfmetrics',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\pdfmetrics.py',
+   'PYMODULE'),
+  ('reportlab.lib.fonts',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\fonts.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._glyphlist',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_glyphlist.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase.pdfdoc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\pdfdoc.py',
+   'PYMODULE'),
+  ('reportlab.lib.rparsexml',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\rparsexml.py',
+   'PYMODULE'),
+  ('chardet',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\__init__.py',
+   'PYMODULE'),
+  ('chardet.version',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\version.py',
+   'PYMODULE'),
+  ('chardet.universaldetector',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\universaldetector.py',
+   'PYMODULE'),
+  ('chardet.utf1632prober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\utf1632prober.py',
+   'PYMODULE'),
+  ('chardet.sbcsgroupprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\sbcsgroupprober.py',
+   'PYMODULE'),
+  ('chardet.sbcharsetprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\sbcharsetprober.py',
+   'PYMODULE'),
+  ('chardet.langturkishmodel',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\langturkishmodel.py',
+   'PYMODULE'),
+  ('chardet.langthaimodel',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\langthaimodel.py',
+   'PYMODULE'),
+  ('chardet.langrussianmodel',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\langrussianmodel.py',
+   'PYMODULE'),
+  ('chardet.langhebrewmodel',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\langhebrewmodel.py',
+   'PYMODULE'),
+  ('chardet.langgreekmodel',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\langgreekmodel.py',
+   'PYMODULE'),
+  ('chardet.langbulgarianmodel',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\langbulgarianmodel.py',
+   'PYMODULE'),
+  ('chardet.hebrewprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\hebrewprober.py',
+   'PYMODULE'),
+  ('chardet.mbcsgroupprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\mbcsgroupprober.py',
+   'PYMODULE'),
+  ('chardet.utf8prober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\utf8prober.py',
+   'PYMODULE'),
+  ('chardet.mbcssm',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\mbcssm.py',
+   'PYMODULE'),
+  ('chardet.codingstatemachinedict',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\codingstatemachinedict.py',
+   'PYMODULE'),
+  ('chardet.codingstatemachine',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\codingstatemachine.py',
+   'PYMODULE'),
+  ('chardet.sjisprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\sjisprober.py',
+   'PYMODULE'),
+  ('chardet.mbcharsetprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\mbcharsetprober.py',
+   'PYMODULE'),
+  ('chardet.jpcntx',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\jpcntx.py',
+   'PYMODULE'),
+  ('chardet.chardistribution',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\chardistribution.py',
+   'PYMODULE'),
+  ('chardet.johabfreq',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\johabfreq.py',
+   'PYMODULE'),
+  ('chardet.jisfreq',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\jisfreq.py',
+   'PYMODULE'),
+  ('chardet.gb2312freq',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\gb2312freq.py',
+   'PYMODULE'),
+  ('chardet.euctwfreq',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\euctwfreq.py',
+   'PYMODULE'),
+  ('chardet.euckrfreq',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\euckrfreq.py',
+   'PYMODULE'),
+  ('chardet.big5freq',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\big5freq.py',
+   'PYMODULE'),
+  ('chardet.johabprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\johabprober.py',
+   'PYMODULE'),
+  ('chardet.gb2312prober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\gb2312prober.py',
+   'PYMODULE'),
+  ('chardet.euctwprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\euctwprober.py',
+   'PYMODULE'),
+  ('chardet.euckrprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\euckrprober.py',
+   'PYMODULE'),
+  ('chardet.eucjpprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\eucjpprober.py',
+   'PYMODULE'),
+  ('chardet.cp949prober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\cp949prober.py',
+   'PYMODULE'),
+  ('chardet.big5prober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\big5prober.py',
+   'PYMODULE'),
+  ('chardet.macromanprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\macromanprober.py',
+   'PYMODULE'),
+  ('chardet.latin1prober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\latin1prober.py',
+   'PYMODULE'),
+  ('chardet.escprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\escprober.py',
+   'PYMODULE'),
+  ('chardet.escsm',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\escsm.py',
+   'PYMODULE'),
+  ('chardet.resultdict',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\resultdict.py',
+   'PYMODULE'),
+  ('chardet.enums',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\enums.py',
+   'PYMODULE'),
+  ('chardet.charsetprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\charsetprober.py',
+   'PYMODULE'),
+  ('chardet.charsetgroupprober',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\chardet\\charsetgroupprober.py',
+   'PYMODULE'),
+  ('reportlab',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\__init__.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase.pdfutils',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\pdfutils.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase.rl_codecs',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\rl_codecs.py',
+   'PYMODULE'),
+  ('reportlab.lib.rl_accel',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\rl_accel.py',
+   'PYMODULE'),
+  ('reportlab.rl_config',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\rl_config.py',
+   'PYMODULE'),
+  ('reportlab.lib.logger',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\logger.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_zapfdingbats',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_zapfdingbats.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_symbol',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_symbol.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_timesbolditalic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_timesbolditalic.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_timesitalic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_timesitalic.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_timesbold',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_timesbold.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_timesroman',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_timesroman.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_helveticaboldoblique',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_helveticaboldoblique.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_helveticaoblique',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_helveticaoblique.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_helveticabold',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_helveticabold.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_helvetica',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_helvetica.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_courierboldoblique',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_courierboldoblique.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_courieroblique',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_courieroblique.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_courierbold',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_courierbold.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_widths_courier',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_widths_courier.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_enc_macexpert',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_enc_macexpert.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_enc_pdfdoc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_enc_pdfdoc.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_enc_zapfdingbats',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_enc_zapfdingbats.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_enc_symbol',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_enc_symbol.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_enc_standard',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_enc_standard.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_enc_macroman',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_enc_macroman.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase._fontdata_enc_winansi',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\_fontdata_enc_winansi.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\__init__.py',
+   'PYMODULE'),
+  ('reportlab.lib.utils',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\utils.py',
+   'PYMODULE'),
+  ('reportlab.rl_settings',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\rl_settings.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\platform.py',
+   'PYMODULE'),
+  ('_ios_support',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_ios_support.py',
+   'PYMODULE'),
+  ('reportlab.lib.rl_safe_eval',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\rl_safe_eval.py',
+   'PYMODULE'),
+  ('reportlab.lib.rltempfile',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\rltempfile.py',
+   'PYMODULE'),
+  ('reportlab.lib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\__init__.py',
+   'PYMODULE'),
+  ('reportlab.lib.pdfencrypt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\pdfencrypt.py',
+   'PYMODULE'),
+  ('reportlab.lib.arciv',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\arciv.py',
+   'PYMODULE'),
+  ('reportlab.platypus.flowables',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\platypus\\flowables.py',
+   'PYMODULE'),
+  ('reportlab.lib.sequencer',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\sequencer.py',
+   'PYMODULE'),
+  ('reportlab.platypus.frames',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\platypus\\frames.py',
+   'PYMODULE'),
+  ('reportlab.platypus.paragraph',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\platypus\\paragraph.py',
+   'PYMODULE'),
+  ('pyphen',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\__init__.py',
+   'PYMODULE'),
+  ('reportlab.lib.geomutils',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\geomutils.py',
+   'PYMODULE'),
+  ('reportlab.platypus.paraparser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\platypus\\paraparser.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\html\\entities.py',
+   'PYMODULE'),
+  ('html.parser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\html\\parser.py',
+   'PYMODULE'),
+  ('_markupbase',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_markupbase.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase.ttfonts',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\ttfonts.py',
+   'PYMODULE'),
+  ('reportlab.platypus.doctemplate',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\platypus\\doctemplate.py',
+   'PYMODULE'),
+  ('reportlab.lib.randomtext',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\randomtext.py',
+   'PYMODULE'),
+  ('reportlab.lib.abag',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\abag.py',
+   'PYMODULE'),
+  ('reportlab.lib.PyFontify',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\PyFontify.py',
+   'PYMODULE'),
+  ('reportlab.lib.textsplit',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\textsplit.py',
+   'PYMODULE'),
+  ('doctest',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\doctest.py',
+   'PYMODULE'),
+  ('unittest',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('unittest.async_case',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\async_case.py',
+   'PYMODULE'),
+  ('asyncio',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.unix_events',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\unix_events.py',
+   'PYMODULE'),
+  ('asyncio.log',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\log.py',
+   'PYMODULE'),
+  ('asyncio.windows_events',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\windows_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_utils',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\windows_utils.py',
+   'PYMODULE'),
+  ('asyncio.selector_events',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\selector_events.py',
+   'PYMODULE'),
+  ('asyncio.proactor_events',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\proactor_events.py',
+   'PYMODULE'),
+  ('asyncio.base_subprocess',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_subprocess.py',
+   'PYMODULE'),
+  ('asyncio.threads',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\threads.py',
+   'PYMODULE'),
+  ('asyncio.taskgroups',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\taskgroups.py',
+   'PYMODULE'),
+  ('asyncio.subprocess',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\subprocess.py',
+   'PYMODULE'),
+  ('asyncio.streams',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\streams.py',
+   'PYMODULE'),
+  ('asyncio.runners',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\runners.py',
+   'PYMODULE'),
+  ('asyncio.base_events',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_events.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\concurrent\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.trsock',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\trsock.py',
+   'PYMODULE'),
+  ('asyncio.staggered',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\staggered.py',
+   'PYMODULE'),
+  ('asyncio.timeouts',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\timeouts.py',
+   'PYMODULE'),
+  ('asyncio.tasks',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\tasks.py',
+   'PYMODULE'),
+  ('asyncio.queues',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\queues.py',
+   'PYMODULE'),
+  ('asyncio.base_tasks',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_tasks.py',
+   'PYMODULE'),
+  ('asyncio.locks',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\locks.py',
+   'PYMODULE'),
+  ('asyncio.mixins',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\mixins.py',
+   'PYMODULE'),
+  ('asyncio.sslproto',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\sslproto.py',
+   'PYMODULE'),
+  ('asyncio.transports',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\transports.py',
+   'PYMODULE'),
+  ('asyncio.protocols',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\protocols.py',
+   'PYMODULE'),
+  ('asyncio.futures',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\futures.py',
+   'PYMODULE'),
+  ('asyncio.base_futures',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_futures.py',
+   'PYMODULE'),
+  ('asyncio.exceptions',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\exceptions.py',
+   'PYMODULE'),
+  ('asyncio.events',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\events.py',
+   'PYMODULE'),
+  ('asyncio.format_helpers',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\format_helpers.py',
+   'PYMODULE'),
+  ('asyncio.coroutines',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\coroutines.py',
+   'PYMODULE'),
+  ('asyncio.constants',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\constants.py',
+   'PYMODULE'),
+  ('unittest.signals',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\signals.py',
+   'PYMODULE'),
+  ('unittest.main',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\main.py',
+   'PYMODULE'),
+  ('unittest.runner',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\runner.py',
+   'PYMODULE'),
+  ('unittest.loader',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\loader.py',
+   'PYMODULE'),
+  ('unittest.suite',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('unittest.case',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\case.py',
+   'PYMODULE'),
+  ('unittest._log',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\_log.py',
+   'PYMODULE'),
+  ('unittest.result',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\result.py',
+   'PYMODULE'),
+  ('unittest.util',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\unittest\\util.py',
+   'PYMODULE'),
+  ('pdb',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pdb.py',
+   'PYMODULE'),
+  ('pydoc',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pydoc.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\webbrowser.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\http\\server.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\socketserver.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('_pyrepl.pager',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\pager.py',
+   'PYMODULE'),
+  ('_pyrepl',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\__init__.py',
+   'PYMODULE'),
+  ('tty',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\tty.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\sysconfig\\__init__.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_aix_support.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\shlex.py',
+   'PYMODULE'),
+  ('rlcompleter',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\rlcompleter.py',
+   'PYMODULE'),
+  ('codeop',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\codeop.py',
+   'PYMODULE'),
+  ('code',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\code.py',
+   'PYMODULE'),
+  ('bdb',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\bdb.py',
+   'PYMODULE'),
+  ('cmd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\cmd.py',
+   'PYMODULE'),
+  ('difflib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\difflib.py',
+   'PYMODULE'),
+  ('reportlab.graphics.renderPDF',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\renderPDF.py',
+   'PYMODULE'),
+  ('reportlab.graphics.testshapes',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\testshapes.py',
+   'PYMODULE'),
+  ('reportlab.graphics.renderPM',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\renderPM.py',
+   'PYMODULE'),
+  ('PIL.ImageChops',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageChops.py',
+   'PYMODULE'),
+  ('reportlab.graphics.utils',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\utils.py',
+   'PYMODULE'),
+  ('reportlab.graphics.widgets.signsandsymbols',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\widgets\\signsandsymbols.py',
+   'PYMODULE'),
+  ('reportlab.graphics.widgetbase',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\widgetbase.py',
+   'PYMODULE'),
+  ('reportlab.graphics.charts.piecharts',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\charts\\piecharts.py',
+   'PYMODULE'),
+  ('reportlab.graphics.charts',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\charts\\__init__.py',
+   'PYMODULE'),
+  ('reportlab.graphics.charts.utils3d',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\charts\\utils3d.py',
+   'PYMODULE'),
+  ('reportlab.graphics.charts.textlabels',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\charts\\textlabels.py',
+   'PYMODULE'),
+  ('reportlab.graphics.charts.utils',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\charts\\utils.py',
+   'PYMODULE'),
+  ('reportlab.graphics.charts.legends',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\charts\\legends.py',
+   'PYMODULE'),
+  ('reportlab.graphics.charts.areas',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\charts\\areas.py',
+   'PYMODULE'),
+  ('reportlab.graphics.widgets.markers',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\widgets\\markers.py',
+   'PYMODULE'),
+  ('reportlab.graphics.widgets.flags',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\widgets\\flags.py',
+   'PYMODULE'),
+  ('reportlab.graphics.widgets',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\widgets\\__init__.py',
+   'PYMODULE'),
+  ('reportlab.lib.attrmap',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\attrmap.py',
+   'PYMODULE'),
+  ('reportlab.lib.validators',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\validators.py',
+   'PYMODULE'),
+  ('reportlab.lib.normalDate',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\normalDate.py',
+   'PYMODULE'),
+  ('reportlab.graphics.renderbase',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\renderbase.py',
+   'PYMODULE'),
+  ('reportlab.graphics.transform',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\transform.py',
+   'PYMODULE'),
+  ('reportlab.graphics.shapes',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\shapes.py',
+   'PYMODULE'),
+  ('reportlab.graphics.renderSVG',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\renderSVG.py',
+   'PYMODULE'),
+  ('reportlab.lib.corp',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\corp.py',
+   'PYMODULE'),
+  ('reportlab.lib.formatters',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\formatters.py',
+   'PYMODULE'),
+  ('xml.dom',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\dom\\__init__.py',
+   'PYMODULE'),
+  ('xml.dom.pulldom',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\dom\\pulldom.py',
+   'PYMODULE'),
+  ('xml.dom.minidom',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\dom\\minidom.py',
+   'PYMODULE'),
+  ('xml.dom.expatbuilder',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\dom\\expatbuilder.py',
+   'PYMODULE'),
+  ('xml.dom.NodeFilter',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\dom\\NodeFilter.py',
+   'PYMODULE'),
+  ('xml.dom.minicompat',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\dom\\minicompat.py',
+   'PYMODULE'),
+  ('xml.dom.xmlbuilder',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\dom\\xmlbuilder.py',
+   'PYMODULE'),
+  ('xml.dom.domreg',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\dom\\domreg.py',
+   'PYMODULE'),
+  ('reportlab.graphics.renderPS',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\renderPS.py',
+   'PYMODULE'),
+  ('reportlab.graphics',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\graphics\\__init__.py',
+   'PYMODULE'),
+  ('svglib.svglib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\svglib\\svglib.py',
+   'PYMODULE'),
+  ('svglib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\svglib\\__init__.py',
+   'PYMODULE'),
+  ('svglib.fonts',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\svglib\\fonts.py',
+   'PYMODULE'),
+  ('svglib.utils',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\svglib\\utils.py',
+   'PYMODULE'),
+  ('tinycss2',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\tinycss2\\__init__.py',
+   'PYMODULE'),
+  ('tinycss2.tokenizer',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\tinycss2\\tokenizer.py',
+   'PYMODULE'),
+  ('tinycss2.ast',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\tinycss2\\ast.py',
+   'PYMODULE'),
+  ('webencodings',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\webencodings\\__init__.py',
+   'PYMODULE'),
+  ('webencodings.x_user_defined',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\webencodings\\x_user_defined.py',
+   'PYMODULE'),
+  ('webencodings.labels',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\webencodings\\labels.py',
+   'PYMODULE'),
+  ('tinycss2.serializer',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\tinycss2\\serializer.py',
+   'PYMODULE'),
+  ('tinycss2.parser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\tinycss2\\parser.py',
+   'PYMODULE'),
+  ('tinycss2.bytes',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\tinycss2\\bytes.py',
+   'PYMODULE'),
+  ('cssselect2',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\cssselect2\\__init__.py',
+   'PYMODULE'),
+  ('cssselect2.tree',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\cssselect2\\tree.py',
+   'PYMODULE'),
+  ('cssselect2.compiler',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\cssselect2\\compiler.py',
+   'PYMODULE'),
+  ('tinycss2.nth',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\tinycss2\\nth.py',
+   'PYMODULE'),
+  ('cssselect2.parser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\cssselect2\\parser.py',
+   'PYMODULE'),
+  ('lxml',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\__init__.py',
+   'PYMODULE'),
+  ('lxml.usedoctest',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\usedoctest.py',
+   'PYMODULE'),
+  ('lxml.pyclasslookup',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\pyclasslookup.py',
+   'PYMODULE'),
+  ('lxml.isoschematron',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\__init__.py',
+   'PYMODULE'),
+  ('lxml.includes.libxslt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\includes\\libxslt\\__init__.py',
+   'PYMODULE'),
+  ('lxml.includes.libxml',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\includes\\libxml\\__init__.py',
+   'PYMODULE'),
+  ('lxml.includes.libexslt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\includes\\libexslt\\__init__.py',
+   'PYMODULE'),
+  ('lxml.includes.extlibs',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\includes\\extlibs\\__init__.py',
+   'PYMODULE'),
+  ('lxml.includes',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\includes\\__init__.py',
+   'PYMODULE'),
+  ('lxml.html.usedoctest',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\usedoctest.py',
+   'PYMODULE'),
+  ('lxml.html.soupparser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\soupparser.py',
+   'PYMODULE'),
+  ('bs4',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\__init__.py',
+   'PYMODULE'),
+  ('bs4._warnings',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\_warnings.py',
+   'PYMODULE'),
+  ('bs4.exceptions',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\exceptions.py',
+   'PYMODULE'),
+  ('bs4._typing',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\_typing.py',
+   'PYMODULE'),
+  ('typing_extensions',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\typing_extensions.py',
+   'PYMODULE'),
+  ('bs4.filter',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\filter.py',
+   'PYMODULE'),
+  ('bs4.formatter',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\formatter.py',
+   'PYMODULE'),
+  ('bs4.element',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\element.py',
+   'PYMODULE'),
+  ('bs4._deprecation',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\_deprecation.py',
+   'PYMODULE'),
+  ('bs4.css',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\css.py',
+   'PYMODULE'),
+  ('soupsieve',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\soupsieve\\__init__.py',
+   'PYMODULE'),
+  ('soupsieve.css_parser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\soupsieve\\css_parser.py',
+   'PYMODULE'),
+  ('soupsieve.css_match',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\soupsieve\\css_match.py',
+   'PYMODULE'),
+  ('soupsieve.css_types',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\soupsieve\\css_types.py',
+   'PYMODULE'),
+  ('soupsieve.pretty',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\soupsieve\\pretty.py',
+   'PYMODULE'),
+  ('soupsieve.util',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\soupsieve\\util.py',
+   'PYMODULE'),
+  ('soupsieve.__meta__',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\soupsieve\\__meta__.py',
+   'PYMODULE'),
+  ('bs4.dammit',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\dammit.py',
+   'PYMODULE'),
+  ('bs4.builder._htmlparser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\builder\\_htmlparser.py',
+   'PYMODULE'),
+  ('bs4.builder',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\builder\\__init__.py',
+   'PYMODULE'),
+  ('bs4.builder._lxml',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\builder\\_lxml.py',
+   'PYMODULE'),
+  ('bs4.builder._html5lib',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\bs4\\builder\\_html5lib.py',
+   'PYMODULE'),
+  ('lxml.html.html5parser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\html5parser.py',
+   'PYMODULE'),
+  ('lxml.html.formfill',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\formfill.py',
+   'PYMODULE'),
+  ('lxml.html.defs',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\defs.py',
+   'PYMODULE'),
+  ('lxml.html.clean',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\clean.py',
+   'PYMODULE'),
+  ('lxml.html.builder',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\builder.py',
+   'PYMODULE'),
+  ('lxml.html._setmixin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\_setmixin.py',
+   'PYMODULE'),
+  ('lxml.html._html5builder',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\_html5builder.py',
+   'PYMODULE'),
+  ('lxml.html._diffcommand',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\_diffcommand.py',
+   'PYMODULE'),
+  ('optparse',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\optparse.py',
+   'PYMODULE'),
+  ('lxml.html.ElementSoup',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\ElementSoup.py',
+   'PYMODULE'),
+  ('lxml.html',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\__init__.py',
+   'PYMODULE'),
+  ('lxml.doctestcompare',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\doctestcompare.py',
+   'PYMODULE'),
+  ('lxml.cssselect',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\cssselect.py',
+   'PYMODULE'),
+  ('lxml.ElementInclude',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\ElementInclude.py',
+   'PYMODULE'),
+  ('reportlab.pdfgen.pdfimages',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfgen\\pdfimages.py',
+   'PYMODULE'),
+  ('reportlab.lib.boxstuff',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\boxstuff.py',
+   'PYMODULE'),
+  ('reportlab.lib.enums',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\enums.py',
+   'PYMODULE'),
+  ('reportlab.platypus',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\platypus\\__init__.py',
+   'PYMODULE'),
+  ('reportlab.platypus.xpreformatted',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\platypus\\xpreformatted.py',
+   'PYMODULE'),
+  ('reportlab.platypus.tables',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\platypus\\tables.py',
+   'PYMODULE'),
+  ('reportlab.platypus.multicol',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\platypus\\multicol.py',
+   'PYMODULE'),
+  ('reportlab.lib.styles',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\styles.py',
+   'PYMODULE'),
+  ('reportlab.lib.colors',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\colors.py',
+   'PYMODULE'),
+  ('reportlab.lib.units',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\units.py',
+   'PYMODULE'),
+  ('reportlab.pdfgen.canvas',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfgen\\canvas.py',
+   'PYMODULE'),
+  ('reportlab.pdfbase.acroform',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfbase\\acroform.py',
+   'PYMODULE'),
+  ('reportlab.pdfgen.textobject',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfgen\\textobject.py',
+   'PYMODULE'),
+  ('reportlab.pdfgen.pathobject',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfgen\\pathobject.py',
+   'PYMODULE'),
+  ('reportlab.pdfgen.pdfgeom',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfgen\\pdfgeom.py',
+   'PYMODULE'),
+  ('reportlab.pdfgen',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\pdfgen\\__init__.py',
+   'PYMODULE'),
+  ('reportlab.lib.pagesizes',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\reportlab\\lib\\pagesizes.py',
+   'PYMODULE'),
+  ('PIL.Image',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\Image.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WebPImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TgaImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SpiderImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImageTk',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageTk.py',
+   'PYMODULE'),
+  ('PIL.SgiImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.QoiImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\QoiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PdfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.features',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\features.py',
+   'PYMODULE'),
+  ('PIL.PdfParser',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PdfParser.py',
+   'PYMODULE'),
+  ('PIL.ImageSequence',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageSequence.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PalmImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Jpeg2KImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcnsImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GribStubImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GbrImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FitsImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\FitsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImageShow',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageShow.py',
+   'PYMODULE'),
+  ('PIL.ImageColor',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageColor.py',
+   'PYMODULE'),
+  ('colorsys',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\colorsys.py',
+   'PYMODULE'),
+  ('PIL.ImageCms',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageCms.py',
+   'PYMODULE'),
+  ('PIL.ImageWin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageWin.py',
+   'PYMODULE'),
+  ('PIL.PngImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PngImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PpmImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\JpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegPresets',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\JpegPresets.py',
+   'PYMODULE'),
+  ('PIL.GifImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\GifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImageOps',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageOps.py',
+   'PYMODULE'),
+  ('PIL.ImageMath',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageMath.py',
+   'PYMODULE'),
+  ('PIL.BmpImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\BmpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL._typing',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_typing.py',
+   'PYMODULE'),
+  ('PIL.TiffImagePlugin',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\TiffImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImageQt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageQt.py',
+   'PYMODULE'),
+  ('PIL.ImagePalette',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImagePalette.py',
+   'PYMODULE'),
+  ('PIL.PaletteFile',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\PaletteFile.py',
+   'PYMODULE'),
+  ('PIL.GimpPaletteFile',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\GimpPaletteFile.py',
+   'PYMODULE'),
+  ('PIL.GimpGradientFile',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\GimpGradientFile.py',
+   'PYMODULE'),
+  ('PIL.ImageFilter',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageFilter.py',
+   'PYMODULE'),
+  ('PIL.ImageFile',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageFile.py',
+   'PYMODULE'),
+  ('xml.etree.ElementTree',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.cElementTree',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\cElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.ElementInclude',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementInclude.py',
+   'PYMODULE'),
+  ('xml.etree.ElementPath',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementPath.py',
+   'PYMODULE'),
+  ('xml.etree',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\__init__.py',
+   'PYMODULE'),
+  ('PIL._util',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_util.py',
+   'PYMODULE'),
+  ('PIL._deprecate',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_deprecate.py',
+   'PYMODULE'),
+  ('PIL._binary',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_binary.py',
+   'PYMODULE'),
+  ('PIL.TiffTags',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\TiffTags.py',
+   'PYMODULE'),
+  ('PIL.ImageMode',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ImageMode.py',
+   'PYMODULE'),
+  ('PIL.ExifTags',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\ExifTags.py',
+   'PYMODULE'),
+  ('PIL',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\__init__.py',
+   'PYMODULE'),
+  ('PIL._version',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_version.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\base64.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\json\\scanner.py',
+   'PYMODULE')],
+ [('python313.dll',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\python313.dll',
+   'BINARY'),
+  ('select.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_wmi.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('lxml\\etree.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\etree.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\_elementpath.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\_elementpath.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\sax.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\sax.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\objectify.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\objectify.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\html\\diff.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\html\\diff.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('lxml\\builder.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\builder.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_webp.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_webp.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingtk.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_imagingtk.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingcms.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_imagingcms.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingmath.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_imagingmath.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('_elementtree.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\_elementtree.pyd',
+   'EXTENSION'),
+  ('PIL\\_imaging.cp313-win_amd64.pyd',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PIL\\_imaging.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libcrypto-3.dll',
+   'BINARY'),
+  ('libssl-3.dll',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libssl-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\VCRUNTIME140_1.dll',
+   'BINARY')],
+ [],
+ [],
+ [('assets\\checked.svg',
+   'C:\\Users\\William Lima\\Desktop\\ExportAsPDF\\assets\\checked.svg',
+   'DATA'),
+  ('assets\\unchecked.svg',
+   'C:\\Users\\William Lima\\Desktop\\ExportAsPDF\\assets\\unchecked.svg',
+   'DATA'),
+  ('assets\\warning.svg',
+   'C:\\Users\\William Lima\\Desktop\\ExportAsPDF\\assets\\warning.svg',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_gl.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_gl.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_sl_SI.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_sl_SI.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_lt.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_lt.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_eu.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_eu.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_uk_UA.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_uk_UA.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_bg_BG.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_bg_BG.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_de_DE.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_de_DE.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_or_IN.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_or_IN.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_hr_HR.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_hr_HR.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_de_CH.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_de_CH.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_el_GR.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_el_GR.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_is.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_is.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_sk_SK.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_sk_SK.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_uk_UA.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_uk_UA.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_sr.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_sr.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_el_GR.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_el_GR.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_de.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_de.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_be_BY.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_be_BY.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_de_AT.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_de_AT.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_ru_RU.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_ru_RU.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_ro_RO.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_ro_RO.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_et_EE.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_et_EE.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_pt_PT.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_pt_PT.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_pl_PL.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_pl_PL.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_lt_LT.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_lt_LT.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_cs_CZ.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_cs_CZ.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_da_DK.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_da_DK.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_da_DK.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_da_DK.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_sr.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_sr.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_th_TH.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_th_TH.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_lv_LV.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_lv_LV.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_et_EE.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_et_EE.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_te_IN.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_te_IN.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_sa_IN.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_sa_IN.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_is.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_is.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_hu_HU.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_hu_HU.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\update.sh',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\update.sh',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_NO.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_NO.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_pt_PT.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_pt_PT.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_sk_SK.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_sk_SK.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_en_GB.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_en_GB.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_fr.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_fr.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_eu.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_eu.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_pt_BR.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_pt_BR.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_sr_Latn.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_sr_Latn.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_it_IT.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_it_IT.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_mr_IN.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_mr_IN.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_hu_HU.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_hu_HU.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_en_US.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_en_US.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_af_ZA.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_af_ZA.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_hr_HR.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_hr_HR.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_gl.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_gl.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_as_IN.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_as_IN.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_mn_MN.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_mn_MN.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_sv.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_sv.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_zu_ZA.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_zu_ZA.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_th_TH.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_th_TH.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_it_IT.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_it_IT.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_lv_LV.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_lv_LV.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_ca.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_ca.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_nn_NO.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_nn_NO.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_es.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_es.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_en_GB.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_en_GB.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_pl_PL.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_pl_PL.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_nb_NO.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_nb_NO.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_pa_IN.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_pa_IN.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_es.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_es.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_ca.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_ca.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_pt_BR.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_pt_BR.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_en_US.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_en_US.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_be_BY.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_be_BY.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_bg_BG.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_bg_BG.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_sv.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_sv.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\README_hyph_sq_AL.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\README_hyph_sq_AL.txt',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_ro_RO.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_ro_RO.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_eo.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_eo.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_sl_SI.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_sl_SI.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_id_ID.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_id_ID.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_te_IN.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_te_IN.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_fr.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_fr.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_sq_AL.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_sq_AL.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_kn_IN.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_kn_IN.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_cs_CZ.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_cs_CZ.dic',
+   'DATA'),
+  ('pyphen\\dictionaries\\hyph_nl_NL.dic',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pyphen\\dictionaries\\hyph_nl_NL.dic',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\rng\\iso-schematron.rng',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\resources\\rng\\iso-schematron.rng',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\readme.txt',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\readme.txt',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_message.xsl',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_message.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_abstract_expand.xsl',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_abstract_expand.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_svrl_for_xslt1.xsl',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_svrl_for_xslt1.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\RNG2Schtrn.xsl',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\RNG2Schtrn.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\XSD2Schtrn.xsl',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\XSD2Schtrn.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_dsdl_include.xsl',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_dsdl_include.xsl',
+   'DATA'),
+  ('lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_skeleton_for_xslt1.xsl',
+   'C:\\Users\\William '
+   'Lima\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\lxml\\isoschematron\\resources\\xsl\\iso-schematron-xslt1\\iso_schematron_skeleton_for_xslt1.xsl',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\William '
+   'Lima\\Desktop\\ExportAsPDF\\build\\ExportAsPDF\\base_library.zip',
+   'DATA')])
